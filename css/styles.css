@@ -1,0 +1,149 @@
+#charset "UTF-8"
+ /*@import url('https://fonts.googleapis.com/css?family=Lobster');*/
+body{
+   margin: 0;
+   height: 100%;
+
+}
+/*navbar*/
+.nav{
+ margin: 0;
+ width: 100%;
+ height: 70px;
+ background-color: #3E2723;
+ border-radius: 0px;
+ color: white;
+ display: block;
+ /*opacity: 0.6;*/
+}
+.termface{
+	height: 140px;
+
+}
+
+  /*content*/
+ .content{
+     margin: 60px 20% 60px 20%;
+     word-wrap: break-word;
+ }
+
+
+/*footer*/
+ .footer{
+
+ }
+
+
+
+/*other not so responible objects*/
+
+h1.a51{
+	 margin: 200px 30% 0 30%;
+}
+/*terminal form*/
+.termface{
+  width: 500px;
+  height: 260px;
+  background-color: black;
+  color: red;
+}
+.termtext{
+  width: 500px;
+height: 22px;
+background-color: black;
+color: red;
+text-align: left;
+border: 0;
+}
+
+/*input*/
+/*soon you may remove this part*/
+/*just kidding DO NOT DELETE THIS!*/
+input{
+	color: green;
+	background-color: black;
+  border: 0;
+
+
+}
+/*linkies*/
+a.ji{
+	text-decoration: none;
+	color: white;
+	 position: absolute;
+	top: 20px;
+	left: 20%;
+	font-family: 'Lobster', cursive;
+}
+a.sc{
+	left: 32%;
+}
+a.hr{
+	left: 42%;
+
+}
+
+a:hover{
+	color: gray;
+}
+/*responsiv media obj*/
+
+
+
+@keyframes anima1 {
+  0% {color: white;}
+  50%{color: #ee7;}
+  100%{color: white;}
+}
+.mobnav a:hover, .offcanvas a:focus{
+    color: white;
+    animation-iteration-count: infinite;
+    animation-name: anima1;
+    animation-duration: 4s;
+
+}
+/* HACK: there might be another way to fix mobile nav's coloring without an extra class
+but for now thats what im using */
+.ij{
+  color: white;
+}
+.mobnav{
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #00c1b1;
+  background: -webkit-linear-gradient(#00c1b1, #00c100);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  color: white;
+  font-family: 'Lobster', cursive;
+  display: none;
+  cursor: default;
+}
+.ro{
+  text-align: center;
+  border-radius: 100px;
+  color: white;
+  background-color: #3E2723;
+  display: none;
+  cursor: default;
+
+}
+
+/*responsive media edit*/
+
+@media screen and (max-width: 970px) {
+   .nav{
+     display: none;
+   }
+   .mobnav{
+     display: block;
+   }
+   .ro{
+     display: block;
+   }
+}
